@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+}
+/*:root{
+    --primary-color: #4f46e5;
+    --secondary-color: #4338ca;
+    --text-color: #1f2937;
+    --gradient-start: #4f46e5;
+    --gradient-end: #7c3aed;
+    --light-color: #f3f4f6; 
+}*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 0.1rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+}
+.nav-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 0.5rem;
+}
+.nav-links{
+    display: flex;
+    gap: 0.5rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(141, 52, 19);
+    font-weight: 500;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+}
+.nav-links a i{
+    font-size: 1.1rem;
+}
+.nav-links a:hover{
+    color: orangered;
+}
+.menu-btn{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.header{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background: url(./cateringBG.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: orangered;
+    position: relative;
+}
+.header-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-text h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgb(202, 75, 29);
+}
+.header-text p{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.cta-btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.cta-btn:hover{
+    transform: translateY(-px);
+    background-color: rgb(175, 53, 8);
+}
+
+.about{
+    padding: 4rem 2rem;
+    background: rgb(255, 238, 232);
+}
+.about-content{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.profile-img img{
+    background-color: rgb(255, 247, 247);
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(165, 126, 126, 0.5);
+    height: 300px;
+}
+.about-text{
+    flex: 1;
+    font-size: 1.2rem;
+}
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    background: rgb(184, 52, 4);
+    display: inline-block;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*.skills{
+    padding: 6rem 2rem;
+    background: var(--light-color);
+}
+.skills-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.skills-card{
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.skills-card i{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}*/
+.works{
+    padding: 6rem 2rem;
+    background: rgb(243, 236, 236);
+}
+.works-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.works-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.work-card{
+    flex: 1;
+    min-width: 300px;
+    background: var(--light-color);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.work-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.work-info{
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.work-info h3{
+    margin-bottom: 0.5rem;
+    color: rgb(184, 52, 4);
+}
+.work-links{
+    margin-top: 1rem;
+}
+
+.contact{
+    padding: 6rem 2rem;
+    background: rgb(248, 233, 228);
+    margin-top: -100px;
+}
+.contact-content{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.contact-form{
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    margin-bottom: 0.1rem;
+}
+.form-group label{
+    display: block;
+    margin: 1rem 0 0.2rem ;
+    color: var(--text-color);
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.submit-btn{
+    background: orangered;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+.submit-btn:hover{
+    background-color: rgb(216, 75, 23);
+}
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.susan-img img{
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    height: 200px;
+    margin: 4rem 0 0.5rem 0;
+}
+
+.footer{
+    margin-top: -60px;
+background: rgb(138, 50, 18);
+color: rgb(243, 232, 232);
+padding: 1rem;
+text-align: center;
+font-size: 0.9rem;
+}
+
+.social-links{
+    margin-top: 0.3rem ;
+}
+.social-links a{
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: var(--primary-color);
+}
+
+/*responsive design*/
+
+@media(max-width:780px){
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .header-text h1{
+        font-size: 2.5rem;
+    }
+    .skills-card{
+        min-width: 200px;
+    }
+}
+@media(max-width:1024px){
+    .work-card{
+        flex: 1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .works-grid{
+        justify-content: center;
+    }
+}
