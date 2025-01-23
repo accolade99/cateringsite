@@ -293,7 +293,7 @@ font-size: 0.9rem;
 .slider{
     width: 900px;
     height: 500px;
-    background-image: url(/foods/tradCakeImg.jpg);
+    background-image: url(/tradCakeImg.jpg);
     background-position: center;
     background-size: cover;
     animation: slide 20s infinite;
@@ -301,19 +301,19 @@ font-size: 0.9rem;
 }
 @keyframes slide{
     20%{
-        background-image: url(/foods/bunsEggRolls.jpg);
+        background-image: url(/bunsEggRolls.jpg);
     }
     40%{
-        background-image: url(/foods/cowMeatPepperSoup.jpg);
+        background-image: url(/cowMeatPepperSoup.jpg);
     }
     60%{
-        background-image: url(/foods/jollofRice.jpg);
+        background-image: url(/jollofRice.jpg);
     }
     80%{
-        background-image: url(/foods/smallChopsImg.jpg);
+        background-image: url(/smallChopsImg.jpg);
     }
     100%{
-        background-image: url(/foods/tradCakeImg.jpg);
+        background-image: url(/tradCakeImg.jpg);
     }
 }
 
