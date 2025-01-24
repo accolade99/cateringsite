@@ -290,7 +290,7 @@ font-size: 0.9rem;
     margin: -20px 1px -50px -20px;
     
 }
-.slider{
+/*.slider{
     width: 900px;
     height: 500px;
     background-image: url(/tradCakeImg.jpg);
@@ -298,7 +298,17 @@ font-size: 0.9rem;
     background-size: cover;
     animation: slide 20s infinite;
     transition: all 0.5s ease;
+}*/
+.slider{
+  width: 100%; /* Make the slider responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 900px; /* Set a maximum width for larger screens */
+  background-position: center;
+  background-size: cover;
+  animation: slide 20s infinite;
+  transition: all 0.5s ease;
 }
+
 @keyframes slide{
     20%{
         background-image: url(/bunsEggRolls.jpg);
@@ -362,4 +372,18 @@ font-size: 0.9rem;
     .works-grid{
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 768px) { 
+  /* Adjust for medium screens (tablets) */
+  .slider {
+    height: 400px; /* Reduce height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  /* Adjust for small screens (phones) */
+  .slider {
+    height: 300px; /* Further reduce height for smaller screens */
+  }
 }
